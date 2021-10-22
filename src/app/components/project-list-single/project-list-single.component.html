@@ -1,0 +1,15 @@
+
+<h1>
+    <div *ngIf="project">
+    {{project.title.rendered}}   
+    </div>   
+</h1>
+<div *ngFor="let creator of project.acf.createdby">
+    {{creator.name}}
+    <a *ngIf="creator.creatorInfo" href="{{creator.creatorInfo.guid}}" >biography</a>   
+</div>
+<div *ngFor="let src of project.acf.source">
+    <a href="{{src.link}}" >{{src.link}}</a>
+</div>
+
+

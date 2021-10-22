@@ -1,0 +1,7 @@
+<p>project-list works!</p>
+<div *ngIf="projects && projects.length > 0 ">
+    <app-project-list-single *ngFor="let pj of projects"
+    [project]=pj></app-project-list-single>   
+</div>
+
+
